@@ -1,0 +1,450 @@
+@media only screen and (min-width:650px) and (max-width:1100px){
+  main{
+    section{
+      .contenedorQuienesSomos{
+        .contenedorQuienesSomosParrafoYImagen{
+          .imagenCheff{
+            display: none;
+          }
+        }
+      }
+      .contenedorDeliveryDePedidos{
+        .titularDeliveryDePedidos{
+          margin-bottom: -2rem;
+          font-size: 2.7rem;
+        }
+        .contenedorServiciosDelivery{
+          height: 60vh;
+          .servicioResto, .servicioBebidas, .servicioFarmacia, .servicioKiosco, .servicioSupermercado, .servicioHelados{
+            h3{
+              font-size: 1.7rem;
+            }
+          }
+          img{
+            display: none;
+          }
+        }
+      }
+      .contenedorTrabajemosJuntos{
+        .contenedorTrabajemosJuntosFormularios{
+          height: 110vh;
+          .formularios{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .formularioUno, .formularioDos{
+              font-size: 1rem;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+      .contenedorPreguntasFrecuentes{
+        height: 155vh;        
+      }
+    }
+  }
+  footer{
+    .contenedorFooter{
+      .parrafoFooter{
+       font-size: 0.7rem;
+       margin-top: 0.5rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width:500px) and (max-width:650px){
+  header{
+    .contenedorIdeasNegocios{
+      .titularIdeasNegocios{
+        font-size: 2.5rem;
+      }
+    }
+  }
+  main{
+    .contenedorIndex{
+      .titularh1{
+        font-size: 3rem;
+      }
+      .titularh2{
+        margin-bottom: 5rem;
+        font-size: 1.8rem;
+      }
+    }
+    section{
+      .contenedorQuienesSomos{
+        @include margin-media-queries;
+        height: 110vh;
+        width: 80%;
+        .contenedorQuienesSomosParrafoYImagen{
+          .imagenCheff{
+            .cheff{
+              display: none;
+            }
+          }
+        }
+      }
+      .contenedorDeliveryDePedidos{
+        .titularDeliveryDePedidos{
+          margin-bottom: -1rem;
+          font-size: 2.3rem;
+        }
+        .contenedorServiciosDelivery{
+          height: 50vh;
+          .servicioResto, .servicioBebidas, .servicioFarmacia, .servicioKiosco, .servicioSupermercado, .servicioHelados{
+           margin: -1rem;
+            h3{
+              font-size: 1.4rem; 
+            }
+            p{
+              font-size: 1rem;
+              line-height: 1rem;
+            }
+          }
+          img {
+            display: none;
+          }
+        }       
+      }
+      .contenedorServiciosAlBarrio{
+        .contenedorServicios{
+          height: 50vh;
+          width: 85%;
+          @include margin-media-queries;
+          .textoServicios{
+            h3{
+              font-size: 1.38rem;
+              margin-bottom: -1rem;
+            }
+          }
+          .gridServicios{
+            @include flex-column;
+            .pintorYJardinero{
+              margin-top: -3.5rem;
+            }
+            img{
+              width: 40%;
+            }
+          }
+        }
+      }
+      .contenedorTrabajemosJuntos{
+        .contenedorTrabajemosJuntosFormularios{
+          width: 85%;
+          margin-left: auto;
+          margin-right: auto;
+          height: 120vh;
+          line-height: 1.5rem;
+          .formularios{
+            @include flex-column;
+            .formularioUno, .formularioDos{
+              margin-bottom: 1rem;
+              form{
+                fieldset{
+                  font-size: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .contenedorPreguntasFrecuentes{
+        height: 195vh;
+      }
+    }
+  }
+  footer{
+    .contenedorFooter{
+      .parrafoFooter{
+       font-size: 0.8rem;
+       line-height: 0.7rem;
+       margin-top: 0.2rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width:380px) and (max-width:500px){
+  header{
+    .contenedorIdeasNegocios{
+      .titularIdeasNegocios{
+        font-size: 2rem;
+      }
+    }
+  }
+  main{
+    section{
+      .contenedorQuienesSomos{
+        height: 50vh;
+        .titularQuienesSomos{
+          font-size: 2rem;
+        }
+        .contenedorQuienesSomosParrafoYImagen{
+          .imagenCheff{
+            .cheff{
+              display: none;
+            }
+          }
+          .parrafosQuienesSomos{
+            font-size: 1.1rem;
+            margin-top: -1rem;
+            line-height: 1.4rem;
+          }
+        }
+      }
+      .contenedorDeliveryDePedidos{
+        .titularDeliveryDePedidos{
+        font-size: 1.8rem;
+        }
+        .contenedorServiciosDelivery{
+          .servicioResto, .servicioSupermercado, .servicioHelados, .servicioKiosco{
+            margin: 2rem;
+            width: 80%;
+            margin-top: 1rem;
+            h3{
+              font-size: 1.1rem;
+            }
+            p{
+              font-size: 1.1rem;
+              line-height: 1.2rem;
+            }
+          }
+          .servicioSupermercado, .servicioKiosco{
+            margin-bottom: 1rem;
+            margin-left: -1rem;
+          }
+          .servicioResto{
+            padding-left: 2.5rem;
+          }
+          .servicioHelados, .serviciosKiosco{
+            margin-top: -2rem;
+          }
+          .servicioBebidas, .servicioFarmacia{
+            display: none;
+          }
+          img {
+            display: none;
+          }    
+        }      
+      }
+      .contenedorServiciosAlBarrio{
+        .titularServiciosAlBarrio{
+          font-size: 2rem;
+        }
+        .contenedorServicios{
+          height: 50vh;
+          width: 85%;
+          @include margin-media-queries;
+          .textoServicios{
+            h3{
+              font-size: 1.2rem;
+              margin-bottom: 1rem;
+            }
+          }
+          .gridServicios{
+            @include flex-column;
+            .pintorYJardinero{
+              margin-top: -3.5rem;
+            }
+          }
+        }
+      }
+      .contenedorTrabajemosJuntos{
+        .titularTrabajemosJuntos{
+          font-size: 2rem;
+          margin-top: 1rem;
+        }
+        .contenedorTrabajemosJuntosFormularios{
+          width: 80%;
+          @include margin-media-queries;
+          height: 95vh;
+          line-height: 1rem;
+          .textoTrabajemosJuntos{
+            font-size: 1rem;
+            margin-top: -1rem;
+            margin-bottom: 1rem;
+          }
+          .formularios{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .formularioUno, .formularioDos{
+              margin-bottom: 1rem;
+              form{
+                fieldset{
+                  font-size: 0.9rem;
+                  legend{
+                    line-height: 1.5rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .contenedorPreguntasFrecuentes{
+        height: 180vh;
+        .titularPreguntasFrecuentes{
+          margin-bottom: -2rem;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  footer{
+    .contenedorFooter{
+      .parrafoFooter{
+       font-size: 0.8rem;
+       margin-top: 0.2rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width:280px) and (max-width:380px){
+  header{
+    .contenedorIdeasNegocios{
+      .titularIdeasNegocios{
+        font-size: 2rem;
+      }
+    }
+  }
+  main{
+    .contenedorIndex{
+      .titularh1{
+        font-size: 1.83rem;
+      }
+      .titularh2{
+        font-size: 1.3rem;
+      }
+      .botonTitular{
+        margin-top: 7rem;
+      }
+    }
+    section{
+      .contenedorQuienesSomos{
+        .titularQuienesSomos{
+          font-size: 1.8rem;
+        }
+        .contenedorQuienesSomosParrafoYImagen{
+          .imagenCheff{
+            .cheff{
+              display: none;
+            }
+          }
+          .parrafosQuienesSomos{
+            font-size: 1rem;
+            margin-top: -1rem;
+            line-height: 1.2rem;
+          }
+        }
+      }
+      .contenedorDeliveryDePedidos{
+        .titularDeliveryDePedidos{
+        font-size: 1.8rem;
+        }
+        .contenedorServiciosDelivery{
+          .servicioResto, .servicioSupermercado, .servicioHelados, .servicioKiosco{
+            margin: 2rem;
+            width: 80%;
+            margin-top:-1rem;
+            h3{
+              font-size: 1.1rem;
+            }
+            p{
+              font-size: 1.1rem;
+              line-height: 1.2rem;
+            }
+          }
+          .servicioSupermercado, .servicioKiosco{
+            margin-bottom: 1rem;
+            margin-left: -1rem;
+          }
+          .servicioResto{
+            padding-left: 2.5rem;
+          }
+          .servicioHelados, .serviciosKiosco{
+            margin-top: -2rem;
+          }
+          .servicioBebidas, .servicioFarmacia{
+            display: none;
+          }
+          img {
+            display: none;
+          }    
+        }      
+      }
+      .contenedorServiciosAlBarrio{
+        .titularServiciosAlBarrio{
+          font-size: 2rem;
+        }
+        .contenedorServicios{
+          height: 50vh;
+          width: 85%;
+          @include margin-media-queries;
+          .textoServicios{
+            h3{
+              font-size: 1.2rem;
+              margin-bottom: 1rem;
+            }
+          }
+          .gridServicios{
+            @include flex-column;
+            .pintorYJardinero{
+              margin-top: -3.5rem;
+            }
+          }
+        }
+      }
+      .contenedorTrabajemosJuntos{
+        .titularTrabajemosJuntos{
+          font-size: 2rem;
+          margin-top: 1rem;
+        }
+        .contenedorTrabajemosJuntosFormularios{
+          width: 80%;
+          @include margin-media-queries;
+          height: 130vh;
+          line-height: 1rem;
+          .textoTrabajemosJuntos{
+            font-size: 1rem;
+            margin-top: -1rem;
+            margin-bottom: 1rem;
+          }
+          .formularios{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .formularioUno, .formularioDos{
+              margin-bottom: 1rem;
+              form{
+                fieldset{
+                  font-size: 0.9rem;
+                  legend{
+                    line-height: 1.5rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .contenedorPreguntasFrecuentes{
+        height: 283vh;
+        .titularPreguntasFrecuentes{
+          margin-bottom: -2rem;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  footer{
+    .contenedorFooter{
+      .parrafoFooter{
+       font-size: 0.5rem;
+       margin-top: 0.2rem;
+      }
+    }
+  }
+}
