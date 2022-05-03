@@ -207,7 +207,8 @@ body main section .contenedorServiciosAlBarrio .contenedorServicios .gridServici
       font-size: 2rem; }
   footer .contenedorFooter .parrafoFooter {
     font-size: 0.8rem;
-    margin-top: 0.2rem; } }
+    margin-top: 0.2rem;
+    line-height: 0.8rem; } }
 
 @media only screen and (min-width: 280px) and (max-width: 380px) {
   header .contenedorIdeasNegocios .titularIdeasNegocios {
